@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Veterinarian Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="main-content">
+
+    <!-- HEADER -->
+    <header class="header">
+        <h1><i class="fa-solid fa-user-doctor"></i> Veterinarian Dashboard</h1>
+        <p>Manage consultations, treatments, vaccinations, and clinical records</p>
+    </header>
+
+    <!-- DASHBOARD CARDS -->
+    <section class="dashboard-grid">
+
+        <!-- Pet Patient Records -->
+        <div class="dashboard-card">
+            <i class="fa-solid fa-folder-open"></i>
+            <h3>Pet Patient Records</h3>
+            <p>
+                Access and update pet medical histories, examination findings,
+                treatments, and vaccination records.
+            </p>
+            <a href="../systems/patient-records-vet.html" class="btn">
+                Open Records
+            </a>
+        </div>
+
+        <!-- Appointment & Vaccination Scheduler -->
+        <div class="dashboard-card">
+            <i class="fa-solid fa-calendar-check"></i>
+            <h3>Appointments & Vaccinations</h3>
+            <p>
+                Review daily schedules, conduct consultations,
+                and administer vaccinations.
+            </p>
+            <a href="../systems/appointment-scheduler-vet.html" class="btn">
+                View Schedule
+            </a>
+        </div>
+
+        <!-- Inventory (Limited for Vet) -->
+        <div class="dashboard-card">
+            <i class="fa-solid fa-warehouse"></i>
+            <h3>Medicine Inventory</h3>
+            <p>
+                Check medicine availability and record usage
+                during treatments and procedures.
+            </p>
+            <a href="../systems/inventory-vet.html" class="btn">
+                Check Inventory
+            </a>
+        </div>
+
+    </section>
+
+    <!-- FOOTER ACTIONS -->
+    <div class="dashboard-footer">
+        <a href="../login.html" class="btn logout-btn">
+            <i class="fa-solid fa-right-from-bracket"></i> Logout
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>

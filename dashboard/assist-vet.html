@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assistant Veterinarian Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="main-content">
+
+    <!-- HEADER -->
+    <header class="header">
+        <h1><i class="fa-solid fa-user-nurse"></i> Assistant Veterinarian</h1>
+        <p>Support clinical operations and maintain accurate treatment records</p>
+    </header>
+
+    <!-- DASHBOARD OPTIONS -->
+    <section class="dashboard-grid">
+
+        <!-- Patient Records (Limited) -->
+        <div class="dashboard-card">
+            <i class="fa-solid fa-file-medical"></i>
+            <h3>Pet Patient Records</h3>
+            <p>
+                Assist in recording examination details, treatments,
+                and vaccination information.
+            </p>
+            <a href="../systems/patient-records-assist.html" class="btn">
+                Open Records
+            </a>
+        </div>
+
+        <!-- Appointments (View Only) -->
+        <div class="dashboard-card">
+            <i class="fa-solid fa-calendar-day"></i>
+            <h3>Daily Appointments</h3>
+            <p>
+                View assigned schedules to assist veterinarians
+                during consultations and vaccinations.
+            </p>
+            <a href="../systems/appointment-scheduler-assist.html" class="btn">
+                View Schedule
+            </a>
+        </div>
+
+        <!-- Inventory Usage -->
+        <div class="dashboard-card">
+            <i class="fa-solid fa-boxes-stacked"></i>
+            <h3>Medicine Usage</h3>
+            <p>
+                Record medicines and supplies used during treatments
+                and procedures.
+            </p>
+            <a href="../systems/inventory-assist.html" class="btn">
+                Record Usage
+            </a>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <div class="dashboard-footer">
+        <a href="../login.html" class="btn logout-btn">
+            <i class="fa-solid fa-right-from-bracket"></i> Logout
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>

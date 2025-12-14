@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Owner Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="main-content">
+
+    <!-- HEADER -->
+    <header class="header">
+        <h1><i class="fa-solid fa-user"></i> Owner Dashboard</h1>
+        <p>View your pets’ medical records and upcoming appointments</p>
+    </header>
+
+    <!-- DASHBOARD CARDS -->
+    <section class="dashboard-grid">
+
+        <!-- Pet Patient Records -->
+        <div class="dashboard-card">
+            <i class="fa-solid fa-file-medical"></i>
+            <h3>Pet Medical Records</h3>
+            <p>View your pet’s examination history, treatments, and vaccinations.</p>
+            <a href="../systems/patient-records-owner.html" class="btn">
+                View Records
+            </a>
+        </div>
+
+        <!-- Appointments & Vaccinations -->
+        <div class="dashboard-card">
+            <i class="fa-solid fa-calendar-check"></i>
+            <h3>Appointments & Vaccinations</h3>
+            <p>Book for new appointment and vaccination or check your pet’s upcoming consultation or vaccination schedules.</p>
+            <a href="../systems/appointment-scheduler-owner.html" class="btn">
+                View Schedule
+            </a>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <div class="dashboard-footer">
+        <a href="../login.html" class="btn logout-btn">
+            <i class="fa-solid fa-right-from-bracket"></i> Logout
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>

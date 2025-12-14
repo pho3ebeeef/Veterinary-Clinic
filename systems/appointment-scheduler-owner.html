@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Appointments & Vaccinations | Owner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        /* Form Styling */
+        .appointment-form {
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-top: 30px;
+        }
+
+        .appointment-form label {
+            display: block;
+            margin-top: 15px;
+            font-weight: 500;
+        }
+
+        .appointment-form input,
+        .appointment-form select,
+        .appointment-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        .appointment-form textarea { resize: vertical; }
+        .appointment-form button { margin-top: 20px; }
+    </style>
+</head>
+<body class="owner">
+
+<div class="main-content">
+
+    <!-- HEADER -->
+    <header class="header system-header">
+        <h1><i class="fa-solid fa-calendar-check"></i> Appointments & Vaccinations</h1>
+        <p>View your pet’s schedule or book a new appointment</p>
+
+        <!-- BACK -->
+        <a href="../dashboard/owner.html" class="btn back-btn">
+            <i class="fa-solid fa-arrow-left"></i> Back to Dashboard
+        </a>
+    </header>
+
+    <!-- SYSTEM FUNCTIONS -->
+    <section class="system-grid">
+
+        <!-- Upcoming Appointments -->
+        <div class="system-card">
+            <i class="fa-solid fa-calendar-day"></i>
+            <h3>Upcoming Appointments</h3>
+            <p>See your pet’s scheduled consultations and vaccination dates.</p>
+            <a href="#" class="btn">View Appointments</a>
+        </div>
+
+        <!-- Appointment Status -->
+        <div class="system-card">
+            <i class="fa-solid fa-clipboard-list"></i>
+            <h3>Appointment Status</h3>
+            <p>Check whether appointments are confirmed, completed, or missed.</p>
+            <a href="#" class="btn">View Status</a>
+        </div>
+
+        <!-- Vaccination Schedule -->
+        <div class="system-card">
+            <i class="fa-solid fa-syringe"></i>
+            <h3>Vaccination Schedule</h3>
+            <p>Track upcoming vaccination dates for your pet.</p>
+            <a href="#" class="btn">View Schedule</a>
+        </div>
+
+    </section>
+
+    <!-- BOOK APPOINTMENT FORM -->
+    <div class="appointment-form">
+        <h2><i class="fa-solid fa-calendar-plus"></i> Book New Appointment</h2>
+        <form action="#" method="post">
+            <label for="owner-name">Owner Name</label>
+            <input type="text" id="owner-name" name="owner-name" placeholder="Your full name" required>
+
+            <label for="contact">Contact Number / Email</label>
+            <input type="text" id="contact" name="contact" placeholder="e.g. +63 912 345 6789" required>
+
+            <label for="pet-name">Pet Name</label>
+            <input type="text" id="pet-name" name="pet-name" placeholder="Your pet's name" required>
+
+            <label for="pet-type">Pet Type</label>
+            <select id="pet-type" name="pet-type" required>
+                <option value="">Select type</option>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="bird">Bird</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="appointment-type">Appointment Type</label>
+            <select id="appointment-type" name="appointment-type" required>
+                <option value="">Select type</option>
+                <option value="consultation">Consultation</option>
+                <option value="vaccination">Vaccination</option>
+            </select>
+
+            <label for="appointment-date">Preferred Date</label>
+            <input type="date" id="appointment-date" name="appointment-date" required>
+
+            <label for="notes">Additional Notes</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="Any special instructions or concerns..."></textarea>
+
+            <button type="submit" class="btn"><i class="fa-solid fa-paper-plane"></i> Book Now</button>
+        </form>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Receptionist Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="main-content">
+
+    <!-- HEADER -->
+    <header class="header">
+        <h1><i class="fa-solid fa-user-tie"></i> Receptionist Dashboard</h1>
+        <p>Manage appointments, register pets, and verify inventory</p>
+    </header>
+
+    <!-- DASHBOARD CARDS -->
+    <section class="dashboard-grid">
+
+        <!-- Pet Patient Records (Registration & Verification) -->
+        <div class="dashboard-card">
+            <i class="fa-solid fa-file-medical"></i>
+            <h3>Pet Patient Records</h3>
+            <p>Create new pet records and verify owner information.</p>
+            <a href="../systems/patient-records-recept.html" class="btn">
+                Open Records
+            </a>
+        </div>
+
+        <!-- Appointment & Vaccination Scheduler -->
+        <div class="dashboard-card">
+            <i class="fa-solid fa-calendar-plus"></i>
+            <h3>Appointments & Vaccinations</h3>
+            <p>Schedule, reschedule, and confirm appointments.</p>
+            <a href="../systems/appointment-scheduler-recept.html" class="btn">
+                Manage Schedule
+            </a>
+        </div>
+
+        <!-- Inventory Verification -->
+        <div class="dashboard-card">
+            <i class="fa-solid fa-warehouse"></i>
+            <h3>Inventory Verification</h3>
+            <p>Check stock availability for upcoming appointments and vaccinations.</p>
+            <a href="../systems/inventory-recept.html" class="btn">
+                Verify Inventory
+            </a>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <div class="dashboard-footer">
+        <a href="../login.html" class="btn logout-btn">
+            <i class="fa-solid fa-right-from-bracket"></i> Logout
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>
